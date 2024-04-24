@@ -125,9 +125,65 @@
 			<div class="row justify-content-between justify-content-lg-around align-items-center py-5">
 				<h2 class="text-center my-3">Projects</h2>
 				
-				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+				<div class="row row-cols-1 row-cols-lg-3 g-3">
 
-			        <div class="col">
+					<div class="col">
+						<div class="card shadow-sm bg-cusMidLightBlue">
+						  <img src="./images/p5.png" class="projectPic p-3">
+						  <div class="card-body">
+							<h3>Ecommerce API</h3>
+							<p class="card-text">This is an API for an Ecommerce project using NodeJs and Postman</p>
+								<div class="d-flex justify-content-between align-items-center">
+								  <div class="btn-group">
+									<a href="http://ec2-18-188-42-62.us-east-2.compute.amazonaws.com/b1" target="_blank">
+										<button type="button" class="btn btn-sm btn-outline-dark bg-cusOrange">View</button>
+								  </a>
+								  </div>
+								  <small class="text-body-secondary"> month ago</small>
+								</div>
+						  </div>
+						</div>
+					</div>
+					
+
+
+					<div class="col">
+						<div class="card shadow-sm bg-cusMidLightBlue">
+						  <img src="./images/p6.png" class="projectPic p-3">
+						  <div class="card-body">
+							  <h3>Ecommerce App (Titania)</h3>
+							  <p class="card-text">This is the App for the Ecommerce project using React </p>
+								<div class="d-flex justify-content-between align-items-center">
+								  <div class="btn-group">
+									<a href="http://zuitt-bootcamp-prod-389-6886-villano.s3-website.us-east-1.amazonaws.com/products" target="_blank">
+										<button type="button" class="btn btn-sm btn-outline-dark bg-cusOrange">View</button>
+								  </a>
+								  </div>
+								  <small class="text-body-secondary"> month ago</small>
+								</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card shadow-sm bg-cusMidLightBlue">
+						  <img src="./images/p4.png" class="projectPic p-3">
+						  <div class="card-body">
+							  <h3>Pomodoro Clone</h3>
+							  <p class="card-text">This is a clone of the basic functionalities of "Pomofocus" the pomodoro app.</p>
+								<div class="d-flex justify-content-between align-items-center">
+								  <div class="btn-group">
+									<a href="https://ejvillano.github.io/Pomodoro/" target="_blank">
+										<button type="button" class="btn btn-sm btn-outline-dark bg-cusOrange">View</button>
+								  </a>
+								  </div>
+								  <small class="text-body-secondary">1 month ago</small>
+								</div>
+						  </div>
+						</div>
+					  </div>
+			        
+					<div class="col min-vh-50">
 			          <div class="card shadow-sm bg-cusMidLightBlue">
 			            <img src="./images/p1.png" class="projectPic p-3">
 			            <div class="card-body">
@@ -135,7 +191,9 @@
 			            	<p class="card-text">This is a helmet shop landing page.</p>
 			              	<div class="d-flex justify-content-between align-items-center">
 			                	<div class="btn-group">
-			                  		<button type="button" class="btn btn-sm btn-outline-dark bg-cusOrange">View</button>
+									<a href="https://ejvillano.github.io/Ed-sGear/" target="_blank">
+										<button type="button" class="btn btn-sm btn-outline-dark bg-cusOrange">View</button>
+								  </a>
 			                	</div>
 			                	<small class="text-body-secondary">1 month ago</small>
 			              	</div>
@@ -151,7 +209,9 @@
 			            	<p class="card-text">This is a tinder for dogs landing page.</p>
 			              	<div class="d-flex justify-content-between align-items-center">
 			                	<div class="btn-group">
-			                  		<button type="button" class="btn btn-sm btn-outline-dark bg-cusOrange">View</button>
+									<a href="https://ejvillano.github.io/TinDog/" target="_blank">
+			                  			<button type="button" class="btn btn-sm btn-outline-dark bg-cusOrange">View</button>
+									</a>
 			                	</div>
 			                	<small class="text-body-secondary">1 month ago</small>
 			              	</div>
@@ -167,13 +227,17 @@
 			            	<p class="card-text">This is a mini web game using dices.</p>
 			              	<div class="d-flex justify-content-between align-items-center">
 			                	<div class="btn-group">
-			                  		<button type="button" class="btn btn-sm btn-outline-dark bg-cusOrange">View</button>
+									<a href="https://ejvillano.github.io/DiceGame/" target="_blank">
+										<button type="button" class="btn btn-sm btn-outline-dark bg-cusOrange">View</button>
+								  </a>
 			                	</div>
 			                	<small class="text-body-secondary">1 month ago</small>
 			              	</div>
 			            </div>
 			          </div>
 			        </div>
+
+					
 
        			</div>
 			</div>
@@ -208,35 +272,38 @@
 		<div class="container-fluid mt-2">
 			<h2 class="text-center text-dark p-5">Don't hesitate to leave a message</h2>
 			<div class="row mt-5 d-flex justify-content-center align-items-center">
-				<div class="col-12 col-md-8 col-xl-4 bg-cusOrange mx-auto text-center dark">
+				<div class="col-12 col-md-8 col-xl-4 bg-cusOrange mx-auto text-center dark rounded">
 				<!-- Form Start -->
-					<form id="form-col" class="bg-cusLightBlue px-3 py-3 my-auto mx-auto rounded">
-						<div class="form-group">
-						  <label for="name">Name</label>
-						  <input type="name" class="form-control" id="name">
+					<form id="form-col" >
+						<div id="detailSheet" class="bg-cusLightBlue px-3 py-3 my-auto mx-auto rounded">
+							<div class="form-group">
+							<label for="name">Name</label>
+							<input type="name" class="form-control" id="name">
+							</div>
+
+							<div class="form-group">
+								<label for="email">Email address</label>
+								<input type="email" class="form-control" id="email">
+								
+							</div>
+
+							<div class="form-group">
+								<label for="number">Contact Number</label>
+								<input type="tel" class="form-control" id="number">
+							</div>
+
+							<div class="form-group ">
+								<label for="message">Message</label>
+								<textarea class="form-control" id="message" rows="3"></textarea>
+							</div>
 						</div>
-
-					  <div class="form-group">
-					    <label for="email">Email address</label>
-					    <input type="email" class="form-control" id="email">
-					    
-					  </div>
-
-					  <div class="form-group">
-					    <label for="number">Contact Number</label>
-					    <input type="tel" class="form-control" id="number">
-					  </div>
-
-					   <div class="form-group ">
-					       <label for="message">Message</label>
-					       <textarea class="form-control" id="message" rows="3"></textarea>
-					     </div>
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-dark mb-5" data-toggle="modal" data-target="#exampleModal">
+							Send Email
+						  </button>
 					</form>
 
-				   <!-- Button trigger modal -->
-				   <button type="button" class="btn btn-dark mb-5" data-toggle="modal" data-target="#exampleModal">
-				     Send Email
-				   </button>
+				   
 
 				   <!-- Modal -->
 				   <div id="modalDiv">
@@ -272,7 +339,7 @@
 			<a href="#landing"> Home </a>
 		</div>
 		<div>|</div>
-		<div>Copyright 2023</div>
+		<div>Copyright 2024</div>
 	</footer>
 	<!-- Footer End -->
 
